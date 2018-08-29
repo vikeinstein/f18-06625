@@ -15,7 +15,7 @@ RUN jupyter nbextension enable toc2/main
 RUN jupyter nbextension enable equation-numbering/main
 RUN jupyter nbextension enable ruler/main
 ADD classic.tplx /opt/conda/lib/python3.6/site-packages/nbconvert/templates/latex/
-
+RUN pip install pixiedust
 #RUN jupyter labextension install @jupyterlab/toc
 #RUN pip install git+https://github.com/zulissi/techela.git
 #RUN conda install flake8
